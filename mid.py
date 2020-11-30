@@ -172,6 +172,25 @@ def my_form_post():
         result = {str(key): value for key, value in result.items()}
         return jsonify(result=result)
 
+    elif text2 == 'ALL':
+        text = remove_stop_words() + '\n ' + uppercase_all_words() + '\n ' + word_appearance_count() + '\n ' + POS_tag() + '\n ' + sent_token() + '\n ' + sent_stem() + '\n ' + reverse_input() + '\n ' + count_w_numb() + '\n' + hyponyms() + '\n' + translate_input()
+        result = {"output1": remove_stop_words(),
+                  "output2": uppercase_all_words(),
+                  "output3": word_appearance_count(),
+                  "output4": POS_tag(),
+                  "output5": sent_token(),
+                  "output6": sent_stem(),
+                  "output7": reverse_input(),
+                  "output8": count_w_numb(),
+                  "output9": hyponyms(),
+                  "output10": translate_input()
+                  }
+        result = {str(key): value for key, value in result.items()}
+        return jsonify(result=result)
+    else:
+        print("400 Bad request")
+        return jsonify(result="Not Found"), 400
+
 
 
 if __name__ == '__main__':
