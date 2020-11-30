@@ -88,7 +88,7 @@ def hyponyms():
             rere = [s, ss.hyponyms()]
             for rr in rere:
                 result.append(rere)
-    return (result)
+    print(result)
 
 
 def reverse_input():
