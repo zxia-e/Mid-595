@@ -2,23 +2,23 @@
 The website url: http://3.131.90.103:8000/   
 This website is supposed to give NLP result for your input text.  
 Use the key words in optional functions to call the functions.  
-key words:  
-  "stop words" : remove_stop_words()  
+**key words:**  
+  **"stop words"** : remove_stop_words()
       To remove all the stopwords.  
-  "uppercase":  uppercase_all_words()  
+  **"uppercase":**  uppercase_all_words()  
       To turn all the text into uppercase.  
-  "appearance count": word_appearance_count()  
+  **"appearance count":** word_appearance_count()  
       To count the number of times each word appears.  
-  "pos_tag": POS_tag()  
-  "sentence tokenize" : sent_token()  
-  "stem" : sent_stem()  
-  "lemma" : sent_lemma()  
-  "translate": translate_input()  
+  **"pos_tag":** POS_tag()  
+  **"sentence tokenize" :** sent_token()  
+  **"stem" :** sent_stem()  
+  **"lemma" :** sent_lemma()  
+  **"translate":** translate_input()  
       To translate the English input into Chinese.  
-  "longest word definition" : long_word_def()  
+  **"longest word definition" :** long_word_def()  
       To give the definition of the longest word in the input.  
-  "sentiment analysis" : sentiment_analysis()  
+  **"sentiment analysis" :** sentiment_analysis()  
       To return sentiment analysis scores.  
-  "tree" : gram_tree()  
-  "all" : call all the above functions.  
+  **"tree" :** gram_tree()  
+  **"all" :** call all the above functions.  
   If the function name inputed is not in the optional list, "400 Bad request" will be returned.  
