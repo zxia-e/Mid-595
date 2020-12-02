@@ -3,7 +3,7 @@ The website url: http://3.131.90.103:8000/
 This website is supposed to give NLP result for your input text.  
 Use the key words in optional functions to call the functions.  
 **key words:**  
-  **"stop words"** : remove_stop_words()
+  **"stop words"** : remove_stop_words()  
       To remove all the stopwords.  
   **"uppercase":**  uppercase_all_words()  
       To turn all the text into uppercase.  
