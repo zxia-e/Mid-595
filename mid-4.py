@@ -92,7 +92,7 @@ def sentiment_analysis():
     for sen in sentences:
         s = sid.polarity_scores(sen)
         score.append(s)
-    return(score)
+    return str(score)
 
 
 def sent_lemma():
